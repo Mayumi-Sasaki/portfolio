@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+}
+.delius-regular {
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  padding     : 0px;
+  margin      : 0px;
+  font-family : "Delius","Noto Sans JP",  serif;
+  font        : 18px;
+}
+
+p{
+  margin: 0;
+}
+
+/*heder-inner 部分ここから*/
+.header-inner{
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : space-between;
+  align-items     : center;
+  margin          : 30px auto;
+  max-width       : 1200px;
+}
+.header-inner a{
+  color           : black;
+  font-weight     : bold;
+  text-decoration : none;
+}
+/*heder-inner 部分ここまで*/
+
+h1{
+  margin         : 0 0 0 10px;
+  font-size      : 40px;
+  border-bottom  : 2px dashed rgb(242, 243, 180);
+  /* padding        : 0px 20px; */
+}
+
+.home{
+ text-decoration : none;
+}
+
+/* ナビゲーションメニューの設定ここから */
+/* 横並びにするための設定　flexbox*/
+nav .menu{
+  display      : flex;
+  padding-left : 0;
+}
+nav li{
+    margin      : 0 10px;
+    list-style  : none;
+}
+nav a{
+  font-size     : 20px;
+}
+/* ナビゲーションメニューの設定ここまで */
+
+/*h2の設定*/
+h2{
+  margin      : 0;
+  padding     : 60px 40px;
+  text-align  : center;
+  font-size   : 34px;
+}
+
+p,
+li{
+  font-size   : 18px;
+  margin-bottom:auto;
+}
+/* メイン画像の設定 */
+img{
+  margin      : 0 auto;
+  width       : 100%;
+}
+
+/*Aboutの中身の設定ここから*/
+.about-inner{
+  padding     : 10px;
+  display     : flex;
+  flex-wrap   : wrap;
+  align-items : center;
+  margin      : 0px auto;
+  max-width   : 960px;
+}
+/*丸く切り取る画像の枠*/
+.circle{
+  width         : 280px;
+  height        : 280px;
+}
+/*プロフィール説明の枠 ul,liについては、上述済*/
+.content{
+  margin        : 0 auto;
+  padding       : 0 auto;
+}
+/* 名前部分*/
+.name{
+  font-size     : 24px;
+  font-weight   : bold;
+}
+
+/*timeline*/
+.timeline{
+  list-style      : none;
+  padding-bottom  : 100px;
+}
+
+.timeline > li{
+  margin-bottom   : 60px;
+}
+
+/* for Desktop*/
+@media(min-width  : 640px){
+  .timeline > li{
+    overflow      : hidden;
+    margin        : 0;
+    position      : relative;
+  }
+  .timeline-date{
+    width         : 110px;
+    float         : left;
+    margin-top    :20px;
+  }
+  .timeline-content{
+    width         : 75%;
+    float         : left;
+    border-left   : 3px #e5e5d1 solid;
+    padding-left  : 30px;
+  }
+  .timeline-content:before{
+    content       : '';
+    width         : 12px;
+    height        : 12px;
+    background    : #6fc173;
+    position      : absolute;
+    left          : 106px;
+    top           : 24px;
+    border-radius : 100%
+  }
+}
+
+/* Works */
+
+.works-inner{
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : center;
+  margin          : 0 auto;
+  max-width       : 960px;
+}
+
+/* Worksの画像と説明部分 */
+.item{
+  margin          : 20px 20px;
+  padding         : 0px 40px 30px 40px;
+  width           : 40%;
+  background-color: rgb(242, 243, 180);
+}
+
+.card-title{
+    margin      : 0;
+    padding     : 10px;
+    text-align  : left;
+    font-size   : 24px;
+    text-shadow: 1px 1px 2px silver;
+    border-left : solid 5px orange;
+    border-bottom: solid 1px gray;
+
+}
+
+/* Worksの画像と説明部分 */
+.works-item{
+  margin          : 20px 20px;
+  padding-bottom  : 0px 40px 30px 40px;
+  width           : 40%;
+}
+.works-item > img{
+  width           : 50%;
+}
+
+@media screen and (max-width:480px) {
+
+	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  .item{
+    margin          : 20px 20px;
+    padding         : 0px 40px 30px 40px;
+    width           : 100%;
+    background-color: rgb(242, 243, 180);
+  }
+  /* Worksの画像と説明部分 */
+  .works-item{
+    margin          : 20px 20px;
+    padding-bottom  : 0px 40px 30px 40px;
+    width           : 100%;
+    text-align      : center;
+  }
+}
+
+
+
+/* フッター */
+footer p {
+  text-align      : center;
+  padding-bottom  : 20px;
+}
