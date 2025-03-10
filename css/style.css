@@ -242,7 +242,10 @@ img{
     width         : 150px;
     height        : 150px;
   }
-
+  /*ブログ記事画像の枠*/
+  .blog{
+    width         : 180px;
+  }
 
   /* Business contentの画像と説明部分 */
   /*Aboutの中身の設定ここから*/
@@ -263,6 +266,7 @@ img{
     width           : 100%;
     text-align      : center;
   }
+
   .content{
     margin        : 20px 20px;
     padding       : 0 auto;
