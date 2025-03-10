@@ -199,6 +199,57 @@ img{
 @media screen and (max-width:480px) {
 
 	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  
+  /* Messageの画像と説明部分 */
+
+  .header-inner{
+    margin          : 10px auto;
+   }
+
+  h1{
+    font-size      : 25px;
+  }
+  h2{
+    padding        : 20px 40px;
+    font-size      : 24px;
+  }
+
+  .name{
+    font-size     : 18px;
+    font-weight   : bold;
+  }
+  
+  nav a{
+    font-size     : 13px;
+  }
+
+  p,
+  li{
+    font-size   : 13px;
+    margin-bottom:auto;
+  }
+  .card-title{
+    font-size   : 18px;
+  }
+  /*丸く切り取る画像の枠*/
+  .circle{
+    border-radius : 50%;
+    width         : 100px;
+    height        : 100px;
+  }
+  /*切り取らない画像の枠*/
+  .square{
+    width         : 150px;
+    height        : 150px;
+  }
+
+
+  /* Business contentの画像と説明部分 */
+  /*Aboutの中身の設定ここから*/
+  .about-inner{
+    margin        : 20px 20px;
+    padding       : 0 auto;
+  }
   .item{
     margin          : 20px 20px;
     padding         : 0px 40px 30px 40px;
@@ -212,8 +263,11 @@ img{
     width           : 100%;
     text-align      : center;
   }
+  .content{
+    margin        : 20px 20px;
+    padding       : 0 auto;
+  }
 }
-
 
 
 /* フッター */
