@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mayumi Sasakiの自己紹介">
-    <title>MyProfile</title>
+    <title>Mayumi's portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https;//gstatic.com" crossorigin>
@@ -14,105 +14,147 @@
 
   <body>
       <header>
-        <div class="header-inner">
-          <h1>
-            <a href="index.html" class="home">Welcome To Mayumi's Portfolio</a>
-          </h1>
-          <nav>
-            <ul class="menu">
-              <li><a href="#message">Message</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#business-content">Business Content</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#profile">Profile</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
+        <!-- ロゴ -->
+        <a href="index.html" id="logo"><img src="./images/logo.jpg" alt="トップページに戻る"></a> 
+        <!-- PC用ナビゲーション -->
+        <nav id="nav-pc">
+          <a href="#mission">MISSION</a>
+          <a href="#product">PRODUCT</a>
+          <a href="#vision">VISION</a>
+          <a href="#about">ABOUT</a>
+          <a href="#profile">PROFILE</a>
+        </nav>
+        <!-- スマホ用メニューボタン -->
+        <img id="menu-sp" src="./images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+        <!-- スマホ用ナビゲーション -->
+        <nav id="nav-sp">
+          <img id="close" src="./images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+              src="./images/logo.jpg" alt="トップページに戻る"></a>
+          <a class="menu" href="#mission" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a>
+          <a class="menu" href="#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+          <a class="menu" href="#vision" onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
+          <a class="menu" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a>
+          <a class="menu" href="#profile" onclick="document.getElementById('nav-sp').style.display = 'none'">PROFILE</a>
+        </nav>
+      </header>    
     <main>
       <article>
-        <div>
-          <img src="images/top.jpg" alt="top" class="mainpic">
-        </div>
-
-        <!--Message-->        
-        <section class="about">
-          <h2 id="about">Message</h2>
-          <div class="about-inner">
-            <div><img src="images/message1.jpg" alt="kimonoMayumi" class="circle"></div>
-            <div class="content">
-              <p class="name"><img src="images/heart.jpg" alt="Heart" class="small-image">&nbsp;初めまして</p>
-              <br/>
-              <p>わたしは10年以上、システム開発の仕事に携わってきましたが、</p>
-              <p>その傍、耕作放棄地対策の「草の根活動」に取り組んでいます。</p>
-              <br/>
-              <p>自身のさまざまな活動を発信するため、</p>
-              <br/>              
-              <p>「Webデザイナー」兼「システム開発者」として独立いたしました。</p>
-              <br/>
-              <p>お客さまの想いをステキな形で実現することが目標です。</p>
-              <p>どうぞよろしくお願いいたします。</p>
+        <!--Main Visual-->
+        <section id="main-visual">
+          <div id="main-message"> 
+            <h1>Mayumi's Portfolio</h1>
+             <p>Web related solutions</p>
+          </div>
+          <img src="./images/top2.jpg" alt="蔵王連峰と一目千本桜" class="mainpic">
+        </section>
+        
+        <!--MISSION-->        
+        <section id="mission">
+          <h2 class="index-h2">MISSION</h2>
+          <div id="mission-flex">
+            <div>
+              <img id="mission-photo" src="./images/mission1.jpg" alt="webcreator" class="">
+              <h3>MISSION</h3>
+              <p>私は10年以上、システム開発の仕事に携わりつつ、マニュアル作成や業務フローの見える化と業務改善ツールの作成に取り組んでまいりました。<br/><br/>これまでの経験を活かして、<br/><br/>・Web制作<br/>・システム開発<br/>・DX化推進<br/>・マニュアル作成<br/>・各種画像および動画編集<br/><br/>をフリーランスとして承っております。<br/>どうぞよろしくお願いいたします。</p>    
+            </div>
+            <div>
+              <img id="farm-photo" src="images/mission2.jpg" alt="farm">
+              <h3>Wasteland reclamation project</h3>
+              <p>週末は日本の食料自給率の向上を目標に掲げ、耕作放棄地対策の「草の根活動」に取り組んでいます。<br/>今年、耕作放棄地に花を咲かせる取り組みを新たに開始しました。</p>
+              <a href="https://farm380.stars.ne.jp/">
+                <img src="./images/button-more.png" alt="もっとみる">
+              </a>
             </div>
           </div>
         </section>
 
-        <!-- Works -->
-        <section class="works">
-          <h2 id="works">Works</h2>
-          <div class="works-inner">
-            <div class="works-item">
-              <p class="card-title">Webサイト作成</p><br>
-              <a href="https://farm380.stars.ne.jp/"><img src="images/380top.png" alt="380Farm"></a>
-              <p></p>
+        <!-- PRODUCT -->
+        <section id="product">
+          <h2 class="index-h2">PRODUCT</h2>
+          <div>
+            <div id="product-left">
+              <div>
+                <a href="https://farm380.stars.ne.jp/">
+                  <img class="product-photo" src="./images/380top.png" alt="380Farm様Website">
+                </a>
+                <div class="product-explain">
+                  <span>WebSite Production</span> 
+                  <h3>webサイト制作</h3>
+                  <p>お客様の「ご要望」や「お悩み」を正しく受け止め、閲覧者に内容をしっかり伝えるサイト構築を目指します。</p>
+                </div>
+              </div>
+              <div>
+                <img class="product-photo" src="./images/safekeeper1.jpg" alt="警備人材募集サムネイル">
+                <div class="product-explain">
+                  <span>Banner Production</span> 
+                  <h3>バナー制作</h3>
+                  <p>小さい画像でも閲覧者の目に留まる、わかりやすいバナーを制作します。</p>
+                </div>
+              </div>
             </div>
-            <div class="works-item">
-              <p class="card-title">ブログ記事ライティング</p><br>
-              <a href="https://sendailikers.eidaihouse.com/leisure/ski/sendai-izumi-izumigatakeskijyo-w696-20250209/"><img class="blog" src="images/izmigatake.jpg" alt="泉ヶ岳スキー場"></a>
-              <p></p>
-            </div> 
-            <div class="works-item">
-              <p class="card-title">バナー制作</p><br>
-              <img src="images/safekeeper1.jpg" alt="警備人材募集サムネイル">
-              <p></p>
+            <div id="product-right">
+              <div>
+                <a href="https://sendailikers.eidaihouse.com/leisure/ski/sendai-izumi-izumigatakeskijyo-w696-20250209/">
+                  <img class="product-photo" src="./images/izmigatake.jpg" alt="泉ヶ岳スキー場">
+                </a>
+                <div class="product-explain">
+                  <span>Blog Post Writing</span> 
+                  <h3>ブログ記事ライティング</h3>
+                  <p>運営事業者様より業務を受注し、魅力伝達技術の向上に努めております。</p>
+                </div>
+              </div> 
+              <div>
+                <img class="product-photo" src="./images/youtubebanner.jpg" alt="ウオーキング動画">
+                <div class="product-explain">
+                  <span>Thumbnail Production</span> 
+                  <h3>Youtubeサムネイル制作</h3>
+                  <p>閲覧者がクリックしたくなるサムネイルを制作します。</p>
+                </div>
+              </div>
             </div>
-            <div class="works-item">
-              <p class="card-title">バナー制作</p><br>
-              <img src="images/youtubebanner.jpg" alt="ウオーキング動画">
-              <p></p>
-            </div>
-         </div>
+          </div>
         </section>  
 
-        <!-- Business content  -->
-        <section class="business-content">
-          <h2 id="business-content">Business content</h2>
-          <div class="works-inner">
-            <div class="item">
-              <p class="card-title">DX化推進</p><br>
-              <p>職場の皆さまが<br>「気持ち良く働くための最適解」<br>をクライアント様と見つけます</p>
+        <!-- VISION  -->
+        <section id="vision">
+          <h2 class="index-h2">VISION</h2>
+          <h3>システム関連</h3>
+          <div>
+            <div class="vision-box">
+              <img src="./images/index/vision-01.png" alt="01">
+              <span>
+                <h4>DX化推進</h4>
+                <h5>モチベーションUPの最適解</h5>
+                <p>問題点から解決策を俯瞰的に探り、作業フロー明確化やボトルネックの解消などによる期待値を超えた感動を提供します。</p>
+              </span>
             </div>
-            <div class="item">
-             <p class="card-title">システム開発</p><br>
-             <p>「みんなが幸せに働けるシステム」の構築を目指します<br><br>PHP, HTML, CSS, JavaScript, React</p>
-           </div>
-           <div class="item">
-             <p class="card-title">Webサイト制作</p><br>
-             <p>見やすい、分かりやすい、伝わるHPを作成します</p>
-           </div>
-           <div class="item">
-             <p class="card-title">Webライティング</p><br>
-             <p>クライアント様の魅力を引き出す記事を作成します</p>
-           </div>
-         </div>
+            <div class="vision-box">
+              <img src="./images/index/vision-02.png" alt="02">
+              <span>
+                <h4>システム開発</h4>
+                <h5>みんなを幸せにできるシステム</h5>
+                <p>PHP, HTML, CSS, JavaScript, Reactを使用し、「作業」を減らすシステムを構築します。</p>
+              </span>
+            </div>
+            <div class="vision-box">
+              <img src="./images/index/vision-03.png" alt="03"> 
+              <span>
+                <h4>マニュアル作成</h4>
+                <h5>誰でも分かりやすい</h5>
+                <p>アプリケーションマニュアルから、業務マニュアルまで、各種マニュアルを作成します。日英、英日翻訳も可能です。</p>
+              </span> 
+            </div>
+          </div>
         </section>  
 
         <!--about-->        
-        <section class="about">
-          <h2 id="about">About</h2>
+        <section id="about">
+          <h2 class="index-h2">ABOUT</h2>
           <div class="about-inner">
-            <img src="images/ds.jpg" alt="Mayumi Sasaki" class="square">
-            <div class="content">
-              <p class="name">Mayumi Sasaki</p>
+            <img src="./images/ds.png" alt="Mayumi Sasaki" class="square">
+            <div class="about-content">
+              <h3>Mayumi Sasaki</h3>
               <ul>
                 <li>仙台市生まれ</li>
                 <li>2020年、日本の食料自給率改善を目標とし、減農薬農業を開始</li>
@@ -126,7 +168,7 @@
 
         <!--profile-->
         <section class="profile">
-          <h2 id="profile">Profile</h2>
+          <h2 id="profile">PROFILE</h2>
           <div class="about-inner">
             <div class="content">
               <ul class="timeline">
@@ -149,8 +191,9 @@
                   <div class="timeline-content">
                     <h3>プログラマーの道へ</h3>                    
                     <p>東北大学の研究補助員として、分子動力学シミュレーションソフトを用いた、分子挙動解析方法の確立（Fortran）</p><br/>
-                    <p>医療系画像管理ソフト開発企業にて、Webシステム開発（.Net, C#, HTML, JavaScript, CSS）</p><br/>
-                    <p>インターネットプロバイダにて、Web顧客管理システムのメンテナンス等に従事(PHP, HTML, JavaScript, CSS)</p><br/>
+                    <p>医療系画像管理ソフト開発企業にて、Webシステム開発（.Net, C#, HTML, JavaScript, CSS）<br/>マニュアル作成と日英翻訳も担当</p><br/>
+                    <p>大手複合機メーカーにて多言語翻訳情報管理用VBAツール開発<br/>ヘルプマニュアルの日英翻訳も担当</p><br/>
+                    <p>インターネットプロバイダにて、Web顧客管理システムのメンテナンス等に従事(PHP, HTML, JavaScript, CSS)<br/>顧客からのシステム問合せ対応フロー作成による業務効率化の推進も担当</p><br/>
                     <p>建設コンサルタントにて、キントーンによる業務改善アプリ作成によるDX化の推進(JavaScript)</p>
                   </div>
                 </li>
@@ -167,7 +210,17 @@
       </article>
     </main>
     <footer>
-      <p>&copy; MyProfile. All rights reserved.</p>
-    </footer>
+      <div id="footer-logo">
+        <img src="./images/logo.jpg" alt="mayumiLogo">
+      </div>
+      <div id="footer-link">
+        <a href="#mission">MISSION</a>
+        <a href="#product">PRODUCT</a>
+        <a href="#vision">VISION</a>
+        <a href="#about">ABOUT</a>
+        <a href="#profile">PROFILE</a>
+        <span id="copyright">&copy; Mayumi's portfolio. All rights reserved.</span>
+      </div>
+    </footer>      
   </body>
 </html>
